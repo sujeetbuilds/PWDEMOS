@@ -20,7 +20,7 @@ test('Extract products and save PDF', async({page})=>{
     // console.log(count);
 
     // ********************************************************
-    const mainFolder = path.join(process.cwd(), 'product');
+    const mainFolder = path.join('D:\\PlayWright','Output','product');
     fs.mkdirSync(mainFolder, { recursive: true });
 
     // ********************************************************

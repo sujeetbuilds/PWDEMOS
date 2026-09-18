@@ -66,6 +66,10 @@ test('Extract products and save PDF', async({page})=>{
         });
 
     // ********************************************************
+        await page.goBack();
+    }
+
+    // ********************************************************
     const csvPath = path.join(
         mainFolder,
         'products.csv'
@@ -76,8 +80,4 @@ test('Extract products and save PDF', async({page})=>{
         csvRows.join('\n'),
         'utf8'
     );
-
-    // ********************************************************
-        await page.goBack();
-    }
 });
